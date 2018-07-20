@@ -6,7 +6,7 @@ export default Component.extend({
   layout,
 
   didInsertElement() {
-    (function () {
+    var App = (function () {
       'use strict';
 
       //Basic Config
@@ -616,6 +616,8 @@ export default Component.extend({
         }
       };
 
-    })
+    })();
+    //FastClick
+
   }
 });
