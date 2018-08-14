@@ -50,7 +50,7 @@ export default Component.extend({
       }
 
       //Core private functions
-      function leftSidebarInit(){
+      $(document).ready(function leftSidebarInit(){
 
         var firstAnchor = $(".sidebar-elements > li > a", leftSidebar);
         var anchor = $(".sidebar-elements li a", leftSidebar);
@@ -357,7 +357,7 @@ export default Component.extend({
           if ( wrapper.hasClass( config.offCanvasLeftSidebarClass ) ) {
             leftSidebarOffCanvas();
           }
-      }
+      })
 
       function rightSidebarInit(){
 
